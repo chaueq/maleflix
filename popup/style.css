@@ -1,0 +1,79 @@
+:root {
+    --red: #e50914;
+    --black: #141414;
+}
+
+body {
+    background-color: var(--black);
+    text-align: center;
+    color: var(--red);
+    overflow: hidden;
+    margin: 10px;
+    font-size: 1.2em;
+    width: 34ex;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+.button{
+    cursor: pointer;
+    user-select: none;
+}
+
+#onoff_btn.inactive:hover {
+    text-shadow: 1px 1px 10px white;
+}
+
+.invert {
+    color: var(--black);
+    background-color: var(--red);
+}
+
+.button.active{
+    text-shadow: 1px 1px 20px var(--red);
+}
+
+.button.inactive{
+    filter: opacity(0.5);
+}
+
+#onoff_btn {
+    font-size: 10em;
+}
+
+div.catList {
+    overflow-x: hidden;
+    overflow-y: auto;
+    width: 100%;
+    max-height: 80%;
+}
+
+div.catTitle, div.catBtn {
+    overflow: hidden;
+}
+
+div.catTitle {
+    float: left;
+    width: 80%;
+    text-align: left;
+}
+
+div.catBtn {
+    float: right;
+    width: 18%;
+}
+
+div.catRow {
+    width: 100%;
+    height: 1.5em;
+    line-height: 1.5em;
+    margin-top: .25em;
+    display: block;
+    overflow: hidden;
+}
