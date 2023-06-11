@@ -1,5 +1,5 @@
 (async () => {
-    const index = await getData('index', defaultIndex(), true);
+    const index = getIndex();
     const allowlist = await getData('allowlist', [], true);
     const catList = document.getElementById('cat_list');
     for(const cat_id in index) {

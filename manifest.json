@@ -21,8 +21,7 @@
   "content_scripts": [{
     "matches": ["https://www.netflix.com/*", "https://netflix.com/*"],
     "js": [
-      "defaults/index.js",
-
+      "lib/index.js",
       "lib/data.js",
       "lib/removeTitle.js",
       "lib/blocklist.js",
